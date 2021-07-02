@@ -31,7 +31,16 @@
     color: $color-grey-dark;
 
     &::after {
-      background-color: #fff;
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 
@@ -49,34 +58,32 @@
   }
 
   /* no delay on animation */
-
   &--animated {
     animation: moveInBottom 0.5s ease-out 0.75;
     animation-fill-mode: backwards;
   }
 }
 
-
 .btn-text {
-  &:link,&:visited{
+  &:link,
+  &:visited {
     border-bottom: 1px solid $color-primary;
     color: $color-primary;
     display: inline-block;
     font-size: $default-font-size;
     padding: 3px;
     text-decoration: none;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &:hover {
-background-color: $color-primary;
-box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
-color: $color-white;
-transform: translateY(-2px);
-
+    background-color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    color: $color-white;
+    transform: translateY(-2px);
   }
 
-  &:active{
+  &:active {
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(0px);
   }
