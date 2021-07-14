@@ -33,12 +33,10 @@
   }
 
   &__caption {
+    @include absCenter;
     backface-visibility: hidden;
     color: $color-white;
     font-size: 1.7rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     opacity: 0;
     text-align: center;
     text-transform: uppercase;
